@@ -22,6 +22,13 @@ calBtns.forEach((btn) => {
             str = eval(evalStr);
             input.value = str;
         }
+
+        else if (buttonText == "x") {
+            
+            str = str.slice(0, -1);
+            input.value = str;
+        }
+
         else {
             if (buttonText == "AC") {
                 str = "";
